@@ -1,0 +1,74 @@
+/* General body styling */
+body {
+    background-color: #2288ff; /* Blue background */
+    color: #ffffff; /* White text color */
+    font-family: sans-serif; /* Default font */
+    margin: 0;
+    padding: 0;
+}
+h2{
+    text-align: center;
+    color:chartreuse;
+}
+/* Main container styling */
+.container {
+    background-color: #34495e; /* Dark background for container */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.2); /* Adds shadow around the container */
+    margin: 100px auto; /* Centers the container */
+    max-width: 600px; /* Limits maximum width */
+    padding: 40px; /* Adds padding inside the container */
+}
+
+/* Styling for the preview area */
+.result {
+    padding: 50px 0;
+    display: flex;
+    justify-content: center; /* Centers the element horizontally */
+}
+
+/* Default styling for the preview box */
+#element {
+    height: 120px; /* Fixed height */
+    width: 120px; /* Fixed width */
+    background-color: #fff; /* White background */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Initial box shadow */
+}
+
+/* Styling for slider labels and inputs */
+.slider-wrapper {
+    display: flex;
+    flex-direction: column; /* Stacks the label and input vertically */
+    justify-content: space-between;
+}
+
+/* Range slider styling */
+input[type="range"] {
+    width: 100%; /* Full-width sliders */
+}
+
+/* Code display and button styling */
+.code-wrapper {
+    display: grid; /* Creates a grid layout */
+    grid-template-columns: 9fr 1fr; /* Allocates space for text and button */
+    gap: 5px; /* Adds space between elements */
+    margin-top: 20px;
+}
+
+/* Textarea styling */
+textarea {
+    resize: none; /* Disables resizing */
+    padding: 5px;
+    border: 1px solid #0fdd2e; /* Green border */
+    border-radius: 5px; /* Rounded corners */
+}
+
+/* Button styling */
+.code-wrapper button {
+    background-color: #2288ff; /* Blue background */
+    border: none;
+    border-radius: 5px;
+    color: #fff; /* White text */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 10px; /* Adds padding */
+}

@@ -1,0 +1,77 @@
+<!--document type and version of HTML (HTML5 in this case).-->
+<!DOCTYPE html>
+<!--<html lang="en">: Specifies the language of the document.-->
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding for the document -->
+    <!-- Makes the page responsive -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Box Shadow Generator</title> <!-- Title of the webpage -->
+    <link rel="stylesheet" href="style.css"> <!-- Links the external CSS file -->
+</head>
+<body>
+
+    <!-- Main container for the box shadow generator -->
+    <div class="container">
+        <h2>Box-Shadow-Generator</h2>
+        <!-- Section to display the element with the generated box shadow -->
+        <div class="result">
+            <div id="element"></div> <!-- Box for previewing shadow effects -->
+        </div>
+
+        <!-- Section for sliders and input controls -->
+        <div class="sliders">
+            <!-- Horizontal shadow slider -->
+            <div class="slider-wrapper">
+                <label for="h-shadow">Horizontal Shadow:</label>
+                <input type="range" id="h-shadow" max="100" min="-100" value="0">
+            </div>
+
+            <!-- Vertical shadow slider -->
+            <div class="slider-wrapper">
+                <label for="v-shadow">Vertical Shadow:</label>
+                <input type="range" id="v-shadow" max="100" min="-100" value="0">
+            </div>
+
+            <!-- Blur radius slider -->
+            <div class="slider-wrapper">
+                <label for="blur-radius">Blur Radius:</label>
+                <input type="range" id="blur-radius" max="100" min="0" value="0">
+            </div>
+
+            <!-- Spread radius slider -->
+            <div class="slider-wrapper">
+                <label for="spread-radius">Spread Radius:</label>
+                <input type="range" id="spread-radius" max="50" min="-50" value="0">
+            </div>
+
+            <!-- Shadow color picker -->
+            <div class="slider-wrapper">
+                <label for="shadow-color">Shadow Color:</label>
+                <input type="color" id="shadow-color">
+            </div>
+
+            <!-- Shadow color opacity slider -->
+            <div class="slider-wrapper">
+                <label for="shadow-color-opacity">Shadow Color Opacity:</label>
+                <input type="range" id="shadow-color-opacity" max="1" min="0" value="1" step="0.1">
+            </div>
+
+            <!-- Inset shadow checkbox -->
+            <div class="input-wrapper">
+                <label for="shadow-inset">Inset Shadow:</label>
+                <input type="checkbox" id="shadow-inset">
+            </div>
+
+            <!-- Section to display and copy generated CSS code -->
+            <div class="code-wrapper">
+                <textarea id="code" rows="2"></textarea> <!-- Area to display generated code -->
+                <button onclick="copyCode()">Copy</button> <!-- Button to copy the code -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Links the JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
